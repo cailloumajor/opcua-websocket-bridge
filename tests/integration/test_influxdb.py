@@ -119,5 +119,5 @@ def test_smoketest(
         (("Recorded_index", "1"), ("Active", "true"), ("Age", "12")),
     ]
     for items in expected_items:
-        assert lines.pop(0).items() > set(items)
+        assert lines.pop(0).items() > set(items), f"Got lines:\n{lines}"
     assert len(lines) == 0  # All lines must have been consumed
