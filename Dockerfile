@@ -19,7 +19,7 @@ RUN set -eux ; \
     gosu --version; \
     gosu nobody true
 
-FROM python:3.8.7-buster AS builder
+FROM python:3.9.6-buster AS builder
 
 SHELL ["/bin/bash", "-Eeux", "-o", "pipefail", "-c"]
 
@@ -46,7 +46,7 @@ COPY src ./src
 RUN . .venv/bin/activate \
     && poetry install --no-ansi --no-dev --no-interaction
 
-FROM python:3.8.7-slim-buster AS final
+FROM python:3.9.6-slim-buster AS final
 
 LABEL maintainer="Arnaud Rocher <arnaud.roche3@gmail.com>"
 LABEL org.opencontainers.image.source https://github.com/cailloumajor/opcua-webhmi-bridge
