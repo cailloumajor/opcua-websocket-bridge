@@ -11,7 +11,7 @@ opcua-agent = "opcua_webhmi_bridge.main:app"
 [tool.poetry.dependencies]
 python = "~3.8"
 asyncua = "0.9.14"
-tenacity = "6.1.0"
+tenacity = "8.0.1"
 pydantic = {extras = ["dotenv"], version = "1.8.2"}
 typer = "0.3.2"
 aiohttp = "3.7.4.post0"
