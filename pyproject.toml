@@ -35,7 +35,7 @@ pytest-asyncio = "~0.15.1"
 pytest-httpserver = "~1.0.0rc1"
 pytest-aiohttp = "~0.3.0"
 toml = "~0.10.2"
-requests = "~2.25.1"
+requests = "~2.26.0"
 websocket_client = "~1.0.0"
 
 [build-system]
