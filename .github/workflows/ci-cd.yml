@@ -29,7 +29,7 @@ jobs:
           source poetry_install_vars.sh
           echo "::set-output name=version::$POETRY_VERSION"
       - name: Install Poetry ${{ steps.poetry-version.outputs.version }}
-        uses: Gr1N/setup-poetry@v4
+        uses: Gr1N/setup-poetry@v7
         with:
           poetry-version: ${{ steps.poetry-version.outputs.version }}
       - name: Set up Poetry cache
