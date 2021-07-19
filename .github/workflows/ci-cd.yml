@@ -112,7 +112,7 @@ jobs:
       - name: Run unit tests
         run: pytest -vv --cov-report=xml tests/unit
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
         with:
           flags: unittests
           fail_ci_if_error: true
