@@ -46,7 +46,7 @@ services:
     tty: true
 
   centrifugo:
-    image: centrifugo/centrifugo:v2.8.5
+    image: centrifugo/centrifugo:v2.8.6
     command: centrifugo --config config.toml
     tty: true
     volumes:
